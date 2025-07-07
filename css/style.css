@@ -1549,26 +1549,61 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
     .hero-title {
         font-size: 2.5rem;
+        display: block;
     }
 
     .hero-title-main {
         font-size: 3rem;
+        margin-top: 0; /* Eliminar el margin-top excesivo */
+        margin-bottom: 1rem;
     }
 
     .hero-title-sub {
         font-size: 2rem;
     }
 
+    .hero-description {
+        font-size: 1rem;
+        max-width: 100%;
+        margin: 1rem 0;
+        justify-content: center;
+    }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        margin: 1rem 0;
     }
 
     .hero-stats {
-        flex-direction: column;
-        gap: 2rem;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 2rem;
+        display: block;
     }
 
     .features-grid {
